@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "destination": "Cox's Bazar Tour",
+        "duration": "2 days",
+        "fee": 300,
+        "description": "Visit the longest Sea-beach in the world together with fantastic view of sunset and sunrise scenerioes on Cox's bazar. Starting and Ending at Dhake, and you'll fly to Cox's bazar in the morning, visit attraction there for 2 days and return to Dhaka in the evening of the second day",
+        "location": "Cox's bazar",
+        "image": "https://i.ibb.co/db6tLdf/matthew-brodeur-DH-u2a-V3n-GM-unsplash.jpg",
+        "color": "tomato"
+    },
+    {
+        "id": 2,
+        "destination": "Sundarbans Tour",
+        "duration": "3 days",
+        "fee": 410,
+        "description": "Visit the largest mangrove swamp on earth-Sundarbans, one of the wildest and least known environments in all of South Asia. Sundarbans Tour will take you deep into the forest to explore the wildlife. You get a chance to see Royal Bengal Tigers, spotted deers, claw-less, otters, crocodiles and much other wildlife.",
+        "location": "Sundarban Mangrove Forest",
+        "image": "https://i.ibb.co/PTwNMsg/mamun-srizon-v6-A4n-Xxqk-Fo-unsplash.jpg",
+        "color": "gold"
+    },
+    {
+        "id": 3,
+        "destination": "Srimangal Leisure Tour",
+        "duration": "3 days",
+        "fee": 350,
+        "description": "Spend a weekend wandering through the numerous tea plantations at Srimangal. Visit the villages of indigenous people like Tripura, Khasia and Manipuri to see their lifestyle, trek through Lawachara National Park and see wildlife, taste the famous 7 layer tea and know the tea culture of Bangladesh.",
+        "location": "Srimangal, Sylhet",
+        "image": "https://i.ibb.co/h8M0pt1/nilotpal-kalita-p-JHa-HQJ0-PPk-unsplash.jpg",
+        "color": "green"
+    },
+    {
+        "id": 4,
+        "destination": "Discover Sylhet",
+        "duration": "5 days",
+        "fee": 680,
+        "description": "Experience the very best of north-eastern Bangladesh, which is one of the most scenic parts and the tea region of the country. Visit numerous tea plantations, different tribal villages, trek inside a national park, walk through the trails inside tea gardens, ride a boat on a blue water canal on lalakhal, ratargul swamp forest, shaplar-bil, Sunamgonj dibir haor etc.",
+        "location": "Sylhet, Bangladesh",
+        "image": "https://i.ibb.co/1nT5SgJ/khan-avi-HDk-Asv-On-DME-unsplash.jpg",
+        "color": "magenta"
+    },
+    {
+        "id": 5,
+        "destination": "St. Martin Island Tour",
+        "duration": "2 days",
+        "fee": 300,
+        "description": "Saint Martin is one of the few coral islands in the world. Saint martin island in Bangladesh is called the blue heaven.This is the place where nature will definitely show you the definition of beauty. Enjoy an amazing ship journey on the blue Bay of Bengal. We designed the tour to make you feel every part of the beauty.",
+        "location": "St. Martin, Bangladesh",
+        "image": "https://i.ibb.co/DWkgmvS/fardus-mondol-0ip-VJ99w2x-M-unsplash.jpg",
+        "color": "blue"
+    },
+    {
+        "id": 6,
+        "destination": "Rajshahi City Tour",
+        "duration": "4 days",
+        "fee": 500,
+        "description": "If you are a history lover; a thousand years old real stories fascinate you, this experience is designed exactly for you. Bangladesh holds the exciting stories of this Indian continent which will surely make travelers realize how to enrich the culture and civilization was back then! Let’s look into the places you will experience in this tour Tajhat Palace, Shiva Temple, Sompura Mahavihara etc",
+        "location": "Rajshahi, Bangladesh.",
+        "image": "https://i.ibb.co/kHwndPF/jade-seok-S5z-Ok5g-Bthk-unsplash.jpg",
+        "color": "lightcoral"
+    }
+]
