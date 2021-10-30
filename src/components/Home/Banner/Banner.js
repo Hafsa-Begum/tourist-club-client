@@ -1,13 +1,17 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+// https://i.ibb.co/Rb1bcKS/sylhet-g6b0f07a62-1920.jpg
+// https://i.ibb.co/ngc1Yqn/Stock-Snap-ZPZK3-FNJ07.jpg
+// https://i.ibb.co/xhvqjYR/Stock-Snap-Q0-HFATEZMQ.jpg
 
 const Banner = () => {
     return (
         <Carousel>
             <Carousel.Item>
                 <img
+                    style={{ height: "600px" }}
                     className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
+                    src="https://i.ibb.co/ngc1Yqn/Stock-Snap-ZPZK3-FNJ07.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -17,20 +21,24 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
+                    style={{ height: "600px" }}
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    src="https://i.ibb.co/Rb1bcKS/sylhet-g6b0f07a62-1920.jpg"
                     alt="Second slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className='text-left'>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
+                    style={{ height: "600px" }}
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src="https://i.ibb.co/xhvqjYR/Stock-Snap-Q0-HFATEZMQ.jpg"
                     alt="Third slide"
                 />
 

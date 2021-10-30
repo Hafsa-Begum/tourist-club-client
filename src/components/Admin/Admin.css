@@ -1,0 +1,12 @@
+.admin-area{
+    height: 100vh;
+}
+.admin-menu {
+    list-style: none;
+    cursor: pointer;
+    text-align: start;
+    padding-left: 80px;
+  }
+  .admin-menu li:hover {
+    color: violet;
+  }

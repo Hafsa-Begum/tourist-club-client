@@ -13,16 +13,17 @@ const Header = () => {
                     <Navbar.Brand href="/home">Navbar</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <NavLink className='nav-link' to="/home">Home</NavLink>
-                        <NavLink className='nav-link' to="/addEvents">Add Events</NavLink>
-                        {/* <NavLink className='nav-link' to="/myEvents">My Events</NavLink> */}
-
-                        <NavLink className='nav-link' to="/register"><button className="btn btn-light">Register</button></NavLink>
+                        <NavLink className='nav-link' to="/home"><i className="fs-5 fas fa-home"></i> Home</NavLink>
+                        <NavLink className='nav-link' to="/about"><i className=" fs-5 fas fa-address-card"></i> About</NavLink>
+                        <NavLink className='nav-link' to="/contact"><i className="fs-5 fas fa-address-book"></i> Contact</NavLink>
 
                         {
                             user.email ? <div className='d-flex'>
-                                <NavLink className='nav-link' to="/admin">Admin</NavLink>
-                                <button onClick={logOut} className="btn btn-warning">Logout</button>
+                                {/* <NavLink className='nav-link' to="/addTour">Add Tour</NavLink>
+                                <NavLink className='nav-link' to="/myTours">My Booking</NavLink>
+                                <NavLink className='nav-link' to="/manageBooking">Manage Booking</NavLink> */}
+                                <NavLink className='nav-link' to="/admin"><i className="fs-5 fas fa-users-cog"></i> Admin</NavLink>
+                                <button onClick={logOut} className="btn btn-warning">Logout <i className="fs-5 fas fa-sign-out-alt"></i></button>
                             </div>
                                 :
                                 <NavLink className='nav-link' to="/login">Login</NavLink>
