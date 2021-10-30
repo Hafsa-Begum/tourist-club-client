@@ -10,7 +10,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/home">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/home"><img src="https://i.ibb.co/02mVbb3/logo-1.png" alt="" /> <span className='fst-italic'>TOURIST CLUB</span></Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <NavLink className='nav-link' to="/home"><i className="fs-5 fas fa-home"></i> Home</NavLink>
@@ -19,9 +19,6 @@ const Header = () => {
 
                         {
                             user.email ? <div className='d-flex'>
-                                {/* <NavLink className='nav-link' to="/addTour">Add Tour</NavLink>
-                                <NavLink className='nav-link' to="/myTours">My Booking</NavLink>
-                                <NavLink className='nav-link' to="/manageBooking">Manage Booking</NavLink> */}
                                 <NavLink className='nav-link' to="/admin"><i className="fs-5 fas fa-users-cog"></i> Admin</NavLink>
                                 <button onClick={logOut} className="btn btn-warning">Logout <i className="fs-5 fas fa-sign-out-alt"></i></button>
                             </div>
@@ -30,7 +27,7 @@ const Header = () => {
                         }
                         {user.email &&
                             <Navbar.Text>
-                                <h5>{user.displayName}</h5>
+                                <h5 className='ms-4 text-white'>Hi, {user.displayName}</h5>
                             </Navbar.Text>}
                     </Navbar.Collapse>
                 </Container>

@@ -12,6 +12,8 @@ import ManageBooking from './components/ManageBooking/ManageBooking';
 import AddTour from './components/AddTour/AddTour';
 import ApproveBooking from './components/ManageBooking/ApproveBooking/ApproveBooking';
 import Admin from './components/Admin/Admin';
+import Footer from './components/Shared/Footer/Footer';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -47,7 +49,11 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <Route path='*'>
+              <ErrorPage></ErrorPage>
+            </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
