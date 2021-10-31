@@ -7,7 +7,7 @@ const Reviews = () => {
             <p className='fs-4 pt-5 text-white'>Read The Top</p>
             <h1 className='mb-5 text-white'>Tourist Reviews</h1>
             <div className="row mx-5 mb-5 pb-5">
-                <div className="col-md-4 col-sm-6 col-12 rounded-3 ">
+                <div className="col-md-4 col-sm-6 col-12 mb-3 ">
 
                     <div className='row px-3 pb-3 pt-4 bg-white rounded-3 mx-3'>
                         <div className='col-md-4'>
@@ -27,7 +27,7 @@ const Reviews = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-6 col-12 rounded-3 ">
+                <div className="col-md-4 col-sm-6 col-12 rounded-3 mb-3">
                     <div className='row px-3 pb-3 pt-4 bg-white rounded-3 mx-3'>
                         <div className="col-md-4">
                             <img className='w-100 rounded-circle' src="https://htmldesigntemplates.com/html/yatra/bootstrap4/images/testemonial1.jpg" alt="" />
@@ -47,7 +47,7 @@ const Reviews = () => {
                     </div>
 
                 </div>
-                <div className="col-md-4 col-sm-6 col-12 ">
+                <div className="col-md-4 col-sm-6 col-12 mb-3">
                     <div className="">
                         <div className='row px-3 pb-3 pt-4 bg-white rounded-3 mx-3'>
                             <div className="col-md-4">
