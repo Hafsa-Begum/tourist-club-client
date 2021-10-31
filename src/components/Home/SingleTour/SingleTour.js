@@ -41,7 +41,7 @@ const SingleTour = () => {
     return (
         <div>
             <div className="row mx-5">
-                <div className="col-md-8 col-9 border-end">
+                <div className="col-md-8 col-12 border-end">
                     <h1 className='fs-1 my-5'>Welcome to Our Special <span className='text-warning'>{singleTour.destination}</span></h1>
                     <div className='text-center'><img style={{ height: '500px' }} className='w-75 rounded-3' src={singleTour.image} alt="" />
                     </div>
@@ -58,7 +58,7 @@ const SingleTour = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="col-md-4 col-3">
+                <div className="col-md-4 col-12">
                     <div>
                         <h2 className='mt-5' >To Place Your Booking Provide Information Below</h2>
                         <div className='w-100 book-now-section'>
@@ -75,7 +75,7 @@ const SingleTour = () => {
                             </form>
 
                             <Link to='/myTours'>
-                                <button className="btn btn-primary mt-3">See My Tour Booking</button>
+                                <button className="btn btn-primary mt-3">See Your Tour Booking</button>
                             </Link>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 const ApproveBooking = () => {
     const { id } = useParams();
@@ -47,6 +48,10 @@ const ApproveBooking = () => {
                     </select> <br />
                     <input className='fs-3' type="submit" value="Update" />
                 </form>
+            </div>
+            <div className="mb-5">
+                <Link to='/home'><button className="btn btn-dark me-5">Go Home</button></Link>
+                <Link to='/manageBooking'><button className="btn btn-primary">See Your Approved Status</button></Link>
             </div>
         </div>
     );
