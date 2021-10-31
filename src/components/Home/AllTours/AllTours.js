@@ -7,7 +7,7 @@ const AllTours = () => {
     const [isShowSpinner, setIsShowSpinner] = useState(true)
 
     useEffect(() => {
-        fetch('http://localhost:5000/tours')
+        fetch('https://boiling-badlands-84811.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => {
                 setTours(data)

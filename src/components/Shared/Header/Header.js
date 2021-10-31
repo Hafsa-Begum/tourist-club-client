@@ -18,10 +18,10 @@ const Header = () => {
                         <NavLink className='nav-link' to="/contact"><i className="fs-5 fas fa-address-book"></i> Contact</NavLink>
 
                         {
-                            user.email ? <div className='d-flex'>
+                            user.email ? <>
                                 <NavLink className='nav-link' to="/admin"><i className="fs-5 fas fa-users-cog"></i> Admin</NavLink>
                                 <button onClick={logOut} className="btn btn-warning">Logout <i className="fs-5 fas fa-sign-out-alt"></i></button>
-                            </div>
+                            </>
                                 :
                                 <NavLink className='nav-link' to="/login">Login</NavLink>
                         }

@@ -7,7 +7,7 @@ const AddTour = () => {
     const onSubmit = data => {
         console.log(data)
 
-        fetch('http://localhost:5000/tours', {
+        fetch('https://boiling-badlands-84811.herokuapp.com/tours', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const ManageBooking = () => {
     const [allBookings, setAllBookings] = useState([]);
-    const [control, setConrol] = useState(false);
+    //const [control, setConrol] = useState(false);
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allBookings')
+        fetch('https://boiling-badlands-84811.herokuapp.com/allBookings')
             .then(res => res.json())
             .then(data => setAllBookings(data))
-    }, [control]);
+    }, []);
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure? Data will be permanently DELETED!');
         if (proceed) {
-            fetch(`http://localhost:5000/allBookings/${id}`, {
+            fetch(`https://boiling-badlands-84811.herokuapp.com/allBookings/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
@@ -24,13 +24,13 @@ const ManageBooking = () => {
                     console.log(data)
                     if (data.deletedCount > 1) {
                         alert('Deleted');
-                        setConrol(!control);
-                        // const remaining = allBookings.filter(booking => booking._id !== id)
-                        // setAllBookings(remaining);
+                        //setConrol(!control);
+                        const remainingBooking = allBookings.filter(booking => booking._id !== id)
+                        setAllBookings(remainingBooking);
                     }
-                    else {
-                        setConrol(false);
-                    }
+                    // else {
+                    //     setConrol(false);
+                    // }
 
                 })
         }

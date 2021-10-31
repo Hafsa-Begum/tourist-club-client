@@ -14,7 +14,7 @@ const Admin = () => {
                         <h3 className='mb-3 mt-3'>Dashboard</h3>
                         <div className='admin-menu'>
                             <li onClick={() => setControl('allBookings')} className='mb-3'><i className="fs-5 text-primary fas fa-user-cog"></i> Manage All Booking</li>
-                            <li onClick={() => setControl('myBooking')} className='mb-3' ><i className="fs-5 text-primary fas fa-asterisk"></i> My Booking</li>
+                            <li onClick={() => setControl('myBooking')} className='mb-3' ><i className="text-primary fas fa-asterisk"></i> My Booking</li>
                             <li onClick={() => setControl('addTour')} ><i className="fs-5 text-primary fas fa-folder-plus"></i> Add New Tour</li>
                         </div>
                     </div>
