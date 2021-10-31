@@ -1,3 +1,5 @@
 .feature:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(146, 139, 187, 0.3) ;
+    cursor: pointer;
 }

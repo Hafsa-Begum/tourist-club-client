@@ -14,16 +14,16 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <NavLink className='nav-link' to="/home"><i className="fs-5 fas fa-home"></i> Home</NavLink>
-                        <NavLink className='nav-link' to="/about"><i className=" fs-5 fas fa-address-card"></i> About</NavLink>
-                        <NavLink className='nav-link' to="/contact"><i className="fs-5 fas fa-address-book"></i> Contact</NavLink>
+                        {/* <NavLink className='nav-link' to="/about"><i className=" fs-5 fas fa-address-card"></i> About</NavLink>
+                        <NavLink className='nav-link' to="/contact"><i className="fs-5 fas fa-address-book"></i> Contact</NavLink> */}
+                        <NavLink className='nav-link' to="/admin"><i className="fs-5 fas fa-users-cog"></i> Admin</NavLink>
 
                         {
                             user.email ? <>
-                                <NavLink className='nav-link' to="/admin"><i className="fs-5 fas fa-users-cog"></i> Admin</NavLink>
                                 <button onClick={logOut} className="btn btn-warning">Logout <i className="fs-5 fas fa-sign-out-alt"></i></button>
                             </>
                                 :
-                                <NavLink className='nav-link' to="/login">Login</NavLink>
+                                <NavLink className='nav-link' to="/login"><i class="fs-5 fas fa-sign-in-alt"></i> Login</NavLink>
                         }
                         {user.email &&
                             <Navbar.Text>

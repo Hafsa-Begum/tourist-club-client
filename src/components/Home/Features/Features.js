@@ -4,7 +4,7 @@ import './Features.css';
 const Features = () => {
     return (
         <div id='features'>
-            <h1 className='my-5'>Why you choose us?</h1>
+            <h1 style={{ color: 'mediumslateblue' }} className='my-5'>Why you choose us?</h1>
             <div className="row mx-5 mb-5">
                 <div className="col-md-4 col-sm-6 col-12 pt-3 rounded-3 feature">
                     <div className='mx-5'>

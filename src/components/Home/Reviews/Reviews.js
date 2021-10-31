@@ -4,8 +4,8 @@ import './Reviews.css';
 const Reviews = () => {
     return (
         <div id='reviews' className='reviews-area'>
-            <p className='fs-4 pt-5'>Read The Top</p>
-            <h1 className='mb-5'>Tourist Reviews</h1>
+            <p className='fs-4 pt-5 text-white'>Read The Top</p>
+            <h1 className='mb-5 text-white'>Tourist Reviews</h1>
             <div className="row mx-5 mb-5 pb-5">
                 <div className="col-md-4 col-sm-6 col-12 rounded-3 ">
 

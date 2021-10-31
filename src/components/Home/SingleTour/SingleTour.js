@@ -38,38 +38,18 @@ const SingleTour = () => {
 
     };
 
-    // const handleBookTour = (singleTour) => {
-    //     singleTour.email = user.email;
-    //     singleTour.status = 'pending';
-
-    //     fetch('https://boiling-badlands-84811.herokuapp.com/addBooking', {
-    //         method: "POST",
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(singleTour)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
-    //             if (data.insertedId) {
-    //                 alert('Wow! Your tour booking is Successful.')
-    //             }
-    //         })
-
-    // }
     return (
         <div>
             <div className="row mx-5">
                 <div className="col-md-8 col-9 border-end">
-                    <h1 className='fs-1 my-3'>Welcome to Our Special <span className='text-warning'>{singleTour.destination}</span></h1>
-                    <div className='text-center'><img style={{ height: '500px' }} className='w-50 rounded-3' src={singleTour.image} alt="" />
+                    <h1 className='fs-1 my-5'>Welcome to Our Special <span className='text-warning'>{singleTour.destination}</span></h1>
+                    <div className='text-center'><img style={{ height: '500px' }} className='w-75 rounded-3' src={singleTour.image} alt="" />
                     </div>
                     <p className='w-75 mx-auto fs-5 my-3 mx-5'>{singleTour.description}</p>
                     <div style={{ color: singleTour?.color }} className='w-75 mx-auto d-flex justify-content-between align-items-center fs-3'>
-                        <p>Tour Duration: {singleTour.duration}</p>
-                        <p>Location: {singleTour.location}</p>
-                        <p>Starting from $ {singleTour.fee}</p>
+                        <p><i class="fs-4 text-primary fas fa-clock"></i> {singleTour.duration}</p>
+                        <p><i class="fs-4 text-primary fas fa-map-marker-alt"></i> {singleTour.location}</p>
+                        <p> <span className='fs-3 text-primary'>$</span> {singleTour.fee}</p>
                     </div>
                     <div>
                         {/* <button onClick={() => handleBookTour(singleTour)} className="btn btn-primary mb-5 me-5">Book Your Tour Now</button> */}
@@ -95,7 +75,7 @@ const SingleTour = () => {
                             </form>
 
                             <Link to='/myTours'>
-                                <button className="btn btn-primary">See My Tour Booking</button>
+                                <button className="btn btn-primary mt-3">See My Tour Booking</button>
                             </Link>
                         </div>
                     </div>

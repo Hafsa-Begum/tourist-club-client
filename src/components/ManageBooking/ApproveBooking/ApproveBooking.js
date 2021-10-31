@@ -35,15 +35,16 @@ const ApproveBooking = () => {
     return (
         <div>
             <h1 className='my-5'>Approve <span className='text-primary'>{approveBooking?.destination}</span> Booking</h1>
-            <p>Status: {approveBooking?.status}</p>
+            {/* <p>Status: {approveBooking?.status}</p> */}
             <div className='mb-5'>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <label>{approveBooking?.destination}</label>
+                    {/* <label>{approveBooking?.destination}</label> */}
+                    <br />
                     <select className='fs-3' defaultValue={approveBooking?.status} {...register("status")} placeholder='Status'>
-                        <option value="pending">Pending</option>
-                        <option value="approved">Approved</option>
-                        <option value="completed">Completed</option>
-                    </select>
+                        <option value="pending">pending</option>
+                        <option value="approved">approved</option>
+                        <option value="completed">completed</option>
+                    </select> <br />
                     <input className='fs-3' type="submit" value="Update" />
                 </form>
             </div>
