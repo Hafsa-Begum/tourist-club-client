@@ -15,7 +15,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1 style={{ fontSize: '60px' }} className='mb-5'>Welcome to Our Tourist Club!</h1>
+                    <h1 style={{ fontSize: '60px' }} className='mb-3'>Welcome to Our Tourist Club!</h1>
                     <p className='mb-5 pb-5 fs-3 text-primary'>The more you travel, the more your mind will be refreshed. Travel whole Bangladesh with our Tourist Club</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -29,7 +29,7 @@ const Banner = () => {
 
                 <Carousel.Caption>
                     <div className='text-left'>
-                        <h1 style={{ fontSize: '60px' }} className='mb-5'>Travel Whole Bangladesh with us!</h1>
+                        <h1 style={{ fontSize: '60px' }} className='mb-3'>Travel Whole Bangladesh with us!</h1>
                         <p className='mb-5 pb-5 fs-3 text-success'>The more you travel, the more your mind will be refreshed. Travel whole Bangladesh with our Tourist Club.</p>
                     </div>
                 </Carousel.Caption>
@@ -43,7 +43,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h1 style={{ fontSize: '60px' }} className='mb-5'>Explore whole Bangladesh with Tourist Club!</h1>
+                    <h1 style={{ fontSize: '60px' }} className='mb-3'>Explore whole Bangladesh with Tourist Club!</h1>
                     <p className='mb-5 pb-5 fs-3 text-primary'>The more you travel, the more your mind will be refreshed. Travel whole Bangladesh with our Tourist Club</p>
                 </Carousel.Caption>
             </Carousel.Item>
