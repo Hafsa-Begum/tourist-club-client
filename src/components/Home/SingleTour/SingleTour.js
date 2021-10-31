@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { useForm } from "react-hook-form";
+import './SingleTour.css';
 
 const SingleTour = () => {
     const { id } = useParams();
@@ -80,8 +81,8 @@ const SingleTour = () => {
                 <div className="col-md-4 col-3">
                     <div>
                         <h2 className='mt-5' >To Place Your Booking Provide Information Below</h2>
-                        <div className='w-100'>
-                            <form className='w-100' onSubmit={handleSubmit(onSubmit)}>
+                        <div className='w-100 book-now-section'>
+                            <form className='w-100 d-flex flex-column ps-3' onSubmit={handleSubmit(onSubmit)}>
                                 <input defaultValue={user.displayName} {...register("name")} />
                                 <input defaultValue={user.email} {...register("email")} />
                                 <input defaultValue={singleTour?.destination} {...register("destination")} />
@@ -89,13 +90,13 @@ const SingleTour = () => {
                                 <input defaultValue={singleTour?.image} {...register("image")} />
                                 <input type="date" {...register("date")} />
                                 <input {...register("address")} placeholder='Your Address' />
-                                <input  {...register("phone no.")} placeholder='Your Phone No.' />
+                                <input  {...register("phone")} placeholder='Your Phone No.' />
                                 <input type="submit" value='Book Now' />
                             </form>
 
-                            {/* <Link to='/myTours'>
+                            <Link to='/myTours'>
                                 <button className="btn btn-primary">See My Tour Booking</button>
-                            </Link> */}
+                            </Link>
                         </div>
                     </div>
                 </div>

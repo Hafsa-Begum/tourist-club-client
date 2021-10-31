@@ -16,7 +16,7 @@ const AllTours = () => {
     }, [])
     return (
         <div>
-            <h1>Tours we provide</h1>
+            <h1 className='my-5'>Our Tours</h1>
             {isShowSpinner && <Spinner animation="border" variant="danger" />}
             <div className="row mx-3">
                 {

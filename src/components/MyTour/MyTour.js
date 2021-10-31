@@ -20,10 +20,11 @@ const MyTour = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
-                    if (data.deletedCount > 1) {
+                    if (data.deletedCount > 0) {
                         alert('Your booking is cancelled.')
-                        const remaining = myTours.filter(tour => tour._id !== id);
-                        setMyTours(remaining);
+                        window.location.reload();
+                        // const remaining = myTours.filter(tour => tour._id !== id);
+                        // setMyTours(remaining);
                     }
                 })
         }
@@ -35,9 +36,9 @@ const MyTour = () => {
                 {
                     myTours.map(tour => <div key={tour._id} className="col-md-6 col-12">
                         <div style={{ backgroundColor: tour?.color }} className='m-3 rounded-3  text-white'>
-                            <img style={{ height: '450px' }} className='w-100 rounded-3' src={tour.image} alt="" />
-                            <h2 className='py-3'>Destination: {tour.destination}</h2>
-                            <p className=''>Booking: {tour.status}</p>
+                            <img style={{ height: '450px' }} className='w-100 rounded-3' src={tour?.image} alt="" />
+                            <h2 className='py-3'>Destination: {tour?.destination}</h2>
+                            <p className=''>Booking: {tour?.status}</p>
                             <button onClick={() => handleBookingDelete(tour._id)} className="btn btn-danger mb-4">Cancel Booking</button>
                         </div>
                     </div>)

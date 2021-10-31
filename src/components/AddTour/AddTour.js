@@ -23,7 +23,7 @@ const AddTour = () => {
             })
     };
     return (
-        <div>
+        <div className='add-new-tour'>
             <h1 className='my-5'>Add Tour to Database</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder="Destination" {...register("destination")} />

@@ -1,4 +1,4 @@
-div form{
+.add-new-tour form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@ div form{
     /* color: mediumslateblue; */
 }
 
-div form input, textarea,select, label{
+.add-new-tour form input, textarea,select, label{
     width: 40%;
     margin-bottom: 10px;
     border-top: none;
